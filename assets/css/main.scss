@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css");
+// @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css");
+// @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-coding.css");
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$color-h1: #8ec07c;
+$color-h2: #83a598;
+$color-h3: #d3869b;
+$color-h4: #fabd2f;
+$color-h5: #b8bb26;
+$color-h6: #fe8019;
+
+// 각 헤더 태그에 대해 스타일을 적용해
+h1 {
+    color: $color-h1;
+}
+
+h2 {
+    color: $color-h2;
+}
+
+h3 {
+    color: $color-h3;
+}
+
+h4 {
+    color: $color-h4;
+}
+
+h5 {
+    color: $color-h5;
+}
+
+h5 {
+    color: $color-h6;
+}
+
+strong {
+    color: #e07a5f
+}
+
+.page__meta-date {
+    font-size: 0.8rem; // 날짜 크기 조정
+  }
+
+  .archive__item-title {
+    font-size: 24px; // title 글자 크기 조정
+  }
+
+  .archive__item-excerpt {
+    font-size: 14px; // title 아래 설명 글자 크기 조정
+  }
